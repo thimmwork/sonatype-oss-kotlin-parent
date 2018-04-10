@@ -27,6 +27,8 @@
         <maven-source-plugin.version>2.2.1</maven-source-plugin.version>
         <dokka.version>0.9.15</dokka.version>
         <kotlin.version>1.2.30</kotlin.version>
+
+        <project.scm.id>github</project.scm.id>
     </properties>
 
     <build>

@@ -17,8 +17,11 @@ a parent pom for easy publishing of pure kotlin projects to sonatype-ossrh
   </parent>
   ```
 * ```scm``` tag with links to your source code management
+* if your scm points to github, you can put your credentials in the ```settings.xml``` with a server  with id ```github```.
+  Or you can override the ```project.scm.id``` property to point to the server of your choice
 * ```developers``` tag
 * ```licenses``` tag  (if your code is under another license than Apache Licence, Version 2.0)
+* provide a ```settings.xml``` in your ```.m2``` folder
 
 ### Release your project
 To release your project, use either the ```mvn-release-plugin``` or the profile ```sonatype-oss-release```
